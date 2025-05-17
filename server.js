@@ -10,13 +10,13 @@ import { v2 as cloudinary } from "cloudinary";
 cloudinary.config({
   cloud_name: "dhcobsrot",
   api_key: "965654412181328",
-  api_secret: "efXbaBvJyFOhMRtkfExDEBg8ToI",
+  api_secret: "<Your Cloudinary secret Key>",
 });
 
 mongoose
   .connect(
-    "mongodb+srv://danishnanjiani09:fysRY1kajzUejgo4@cluster0.gxyqxyx.mongodb.net/",
-    { dbName: "NodeJs_Mastery_Course" }
+    "<Your mongoDb Connection String>",
+    { dbName: "Danish_Nanjiani" }
   )
   .then(() => console.log("MongoDb is Connected"))
   .catch((err) => console.log(err));
